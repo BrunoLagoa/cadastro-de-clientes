@@ -15,7 +15,7 @@ Separando os projeto em uma Repositories separado
 - Nessa listagem você também deverá ter a opção de ordenar os clientes pelo seu índice de forma ascendente e descendente.
 
 <b>Obs:</b>
-Por favor, observe os pontos da segunda fase do projeto:
+<i>Por favor, observe os pontos da segunda fase do projeto:</i>
 
 - Agora que você já tem seu cadastro de cliente, você deverá também aceitar clientes Pessoa Jurídica em sua listagem.
 
