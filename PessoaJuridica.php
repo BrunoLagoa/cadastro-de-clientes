@@ -1,9 +1,9 @@
 <?php
 
 require_once('PessoaAbstract.php');
-require_once('PessoaInterFace.php');
+require_once('PJInterFace.php');
 
-class PessoaJuridica extends PessoaAbstract implements PessoaInterFace, PJInterFace
+class PessoaJuridica extends PessoaAbstract implements PJInterFace
 {
     private $cnpj;
     private $estrela;
@@ -12,7 +12,7 @@ class PessoaJuridica extends PessoaAbstract implements PessoaInterFace, PJInterF
     public function __construct($nome, $idade, $endereco, $cidade, $estado, $telefone, $cnpj, $estrela, $enderecoCobranca=null)
     {
         parent::__construct($nome, $idade, $endereco, $cidade, $estado, $telefone, "Pessoa Jurídica");
-        $this->setCodigo($cnpj);
+        $this->setCNPJ($cnpj);
         $this->setEstrela($estrela);
 
         if($enderecoCobranca == null)

@@ -108,4 +108,10 @@ abstract class PessoaAbstract {
         $this->tipo = $tipo;
         return $this;
     }
+
+    abstract public function setEnderecoCobranca($valor);
+    abstract public function getEnderecoCobranca();
+    abstract public function setEstrela($valor);
+    abstract public function getEstrela();
+
 }

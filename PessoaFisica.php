@@ -1,9 +1,9 @@
 <?php
 
 require_once('PessoaAbstract.php');
-require_once('PessoaInterFace.php');
+require_once('PFInterFace.php');
 
-class PessoaFisica extends PessoaAbstract implements PessoaInterFace, PFInterFace
+class PessoaFisica extends PessoaAbstract implements PFInterFace
 {
     private $cpf;
     private $estrela;
