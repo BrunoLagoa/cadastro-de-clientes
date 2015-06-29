@@ -1,9 +1,9 @@
 <?php
 
-require_once('Pessoa.php');
+require_once('PessoaAbstract.php');
 require_once('PessoaInterFace.php');
 
-class PessoaJuridica extends Pessoa implements PessoaInterFace
+class PessoaJuridica extends PessoaAbstract implements PessoaInterFace, PJInterFace
 {
     private $cnpj;
     private $estrela;
@@ -46,13 +46,13 @@ class PessoaJuridica extends Pessoa implements PessoaInterFace
         return $this->enderecoCobranca;
     }
 
-    public function setCodigo($cnpj)
+    public function setCNPJ($cnpj)
     {
         $this->cnpj = $cnpj;
         return $this;
     }
 
-    public function getCodigo()
+    public function getCNPJ()
     {
         return $this->cnpj;
     }

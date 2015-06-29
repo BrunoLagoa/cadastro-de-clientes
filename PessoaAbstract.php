@@ -1,6 +1,6 @@
 <?php
 
-abstract class Pessoa {
+abstract class PessoaAbstract {
 
     protected $nome;
     protected $idade;
